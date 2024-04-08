@@ -5,6 +5,17 @@ import { useState } from "react"
 import Logout from "@/components/icons/logout"
 import User from "@/components/icons/user"
 
+const links = {
+  absensi: '/karyawan/absensi',
+  izin: {
+    pengajuan_izin: '/karyawan/izin/pengajuan-izin',
+    tracking_izin: '/karyawan/izin/tracking-izin'
+  },
+  jadwal: '/karyawan/jadwal',
+  profile: '/karyawan/profile',
+  logout: '/logout'
+}
+
 export default function SidenavKaryawan() {
   const [ dropdown, setDropdown ] = useState(false)
 
@@ -27,7 +38,7 @@ export default function SidenavKaryawan() {
           <ul className="flex flex-col">
             <li className="mt-1 py-1 hover:bg-slate-600">
               <Link 
-               href={"/karyawan/absensi"} 
+               href={links.absensi} 
                className="text-gray-200 block pl-4"
               >
                 Absensi
@@ -43,13 +54,13 @@ export default function SidenavKaryawan() {
                 </p>
                 <div id="izin-submenu" className={izinSubStyle}>
                   <Link 
-                    href={"/karyawan/izin/pengajuan-izin"}
+                    href={links.izin.pengajuan_izin}
                     className="text-gray-200 pl-8 py-1 hover:bg-slate-600"
                   >
                     Pengajuan Izin
                   </Link>
                   <Link
-                    href={`/karyawan/izin/tracking-izin`}
+                    href={links.izin.tracking_izin}
                     className="text-gray-200 pl-8 py-1 hover:bg-slate-600"
                   >
                     Tracking Izin
@@ -58,7 +69,7 @@ export default function SidenavKaryawan() {
               </div>
             </li>
             <li className="my-1">
-              <Link href={`/karyawan/jadwal`} className="text-gray-200 block py-1 pl-4 hover:bg-slate-600">Jadwal</Link>
+              <Link href={links.jadwal} className="text-gray-200 block py-1 pl-4 hover:bg-slate-600">Jadwal</Link>
             </li>
           </ul>
         </nav>
