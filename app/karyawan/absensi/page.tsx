@@ -1,20 +1,18 @@
 import { allAbsenKaryawan } from "@/dummy-data/absen-karyawan";
 
-
-
 async function DataTable() {
-  const data = await allAbsenKaryawan()
+  const data = await allAbsenKaryawan();
 
-  const thStyle = `p-2 text-white bg-slate-900`
-  const tdStyle = `text-center p-2`
-  const tdOddStyle = `${tdStyle} bg-slate-200`
+  const thStyle = `p-2 text-white bg-slate-900`;
+  const tdStyle = `text-center p-2`;
+  const tdOddStyle = `${tdStyle} bg-slate-200`;
 
   const FilterControl = () => (
     <div className="flex gap-2 my-2">
       <button className="p-2 bg-blue-600 text-white rounded">Minggu ini</button>
       <button className="p-2 bg-blue-600 text-white rounded">Bulan ini</button>
     </div>
-  )
+  );
 
   return (
     <div className="flex flex-col">
@@ -32,9 +30,9 @@ async function DataTable() {
             </tr>
           </thead>
           <tbody>
-            {
-              data.map((d, i) => {
-                if(i % 2 != 0) {
+            {data
+              .map((d, i) => {
+                if (i % 2 != 0) {
                   return (
                     <tr key={`${d.tanggal}__${d.come_time}__${d.leave_time}`}>
                       <td className={tdOddStyle}>{d.tanggal}</td>
@@ -44,7 +42,7 @@ async function DataTable() {
                       <td className={tdOddStyle}>{d.jam_keluar}</td>
                       <td className={tdOddStyle}>{d.status}</td>
                     </tr>
-                  )
+                  );
                 } else {
                   return (
                     <tr key={`${d.tanggal}__${d.come_time}__${d.leave_time}`}>
@@ -55,16 +53,15 @@ async function DataTable() {
                       <td className={tdStyle}>{d.jam_keluar}</td>
                       <td className={tdStyle}>{d.status}</td>
                     </tr>
-                  )
+                  );
                 }
               })
-              .slice(0, 10)
-            }
+              .slice(0, 10)}
           </tbody>
         </table>
       </div>
     </div>
-  )  
+  );
 }
 
 export default async function AbsensiKaryawan() {
@@ -74,5 +71,5 @@ export default async function AbsensiKaryawan() {
         <DataTable />
       </div>
     </div>
-  )
+  );
 }
