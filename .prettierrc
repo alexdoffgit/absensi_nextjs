@@ -1,7 +1,10 @@
 {
+  "tabWidth": 4,
+  "printWidth": 80,
+  "useTabs": false,
   "overrides": [
     {
-      "files": "*.tsx",
+      "files": ["*.tsx"],
       "options": {
         "arrowParens": "always",
         "bracketSameLine": true,
@@ -20,6 +23,7 @@
         "requirePragma": false,
         "tabWidth": 2,
         "useTabs": false,
+        "printWidth": 1000,
         "embeddedLanguageFormatting": "auto"
       }
     }
