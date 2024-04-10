@@ -2,3 +2,7 @@ public
 .next
 build
 coverage
+.prettierrc
+.prettierignore
+package-lock.json
+README.md

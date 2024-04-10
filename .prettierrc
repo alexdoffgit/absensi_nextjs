@@ -26,6 +26,13 @@
         "printWidth": 1000,
         "embeddedLanguageFormatting": "auto"
       }
+    },
+    {
+      "files": ["*.json", "*.config.js", "*.config.mjs"],
+      "options": {
+        "tabWidth": 2,
+        "useTabs": false
+      }
     }
   ]
 }
