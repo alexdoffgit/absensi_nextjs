@@ -6,3 +6,5 @@ coverage
 .prettierignore
 package-lock.json
 README.md
+*.svg
+*.ico
