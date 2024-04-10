@@ -28,7 +28,7 @@
       }
     },
     {
-      "files": ["*.json", "*.config.js", "*.config.mjs"],
+      "files": ["*.json", "*.config.js", "*.config.mjs", "*.config.ts"],
       "options": {
         "tabWidth": 2,
         "useTabs": false
