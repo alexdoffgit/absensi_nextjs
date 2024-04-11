@@ -14,7 +14,7 @@ export default function PengajuanIzin() {
             disabled
           />
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-4">
           <span>
             <label htmlFor="mulai-izin" className="block">
               Tanggal Mulai Izin
@@ -38,7 +38,7 @@ export default function PengajuanIzin() {
             />
           </span>
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="nama-atasan" className="block">
             Nama Atasan
           </label>
@@ -47,21 +47,25 @@ export default function PengajuanIzin() {
             <option value="2">Sukijan</option>
           </select>
         </div>
-        <div>
+        <div className="mt-4">
           <label htmlFor="cuti" className="block">
             Tipe Cuti
           </label>
-          <select name="cuti" id="cuti">
+          <select name="cuti" id="cuti" className="p-2">
             <option value="1">Cuti</option>
             <option value="2">Izin</option>
           </select>
         </div>
-        <div>
+        <div className="mt-4">
           <FileInput />
         </div>
-        <button type="button" className="p-2 bg-blue-600 rounded">
-          Submit
-        </button>
+        <div className="flex flex-row-reverse">
+          <button
+            type="button"
+            className="p-2 bg-blue-600 rounded text-white mt-4">
+            Submit
+          </button>
+        </div>
       </div>
     </div>
   );
