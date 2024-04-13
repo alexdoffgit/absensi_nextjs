@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "tanggal_pengajuan": "2023-11-07",
+      "awal_izin": "2023-11-11",
+      "akhir_izin": "2023-11-11",
+      "tipe": "Cuti",
+      "status": "Disetujui"
+    },
+    {
+      "tanggal_pengajuan": "2023-11-28",
+      "awal_izin": "2023-12-01",
+      "akhir_izin": "2023-12-01",
+      "tipe": "Cuti",
+      "status": "Disetujui"
+    },
+    {
+      "tanggal_pengajuan": "2023-12-12",
+      "awal_izin": "2023-12-15",
+      "akhir_izin": "2023-12-16",
+      "tipe": "Cuti",
+      "status": "Ditolak (HRD)"
+    },
+    {
+      "tanggal_pengajuan": "2024-03-05",
+      "awal_izin": "2024-03-09",
+      "akhir_izin": "2023-03-09",
+      "tipe": "Cuti",
+      "status": "Disetujui"
+    },
+    {
+      "tanggal_pengajuan": "2024-03-06",
+      "awal_izin": "2024-03-29",
+      "akhir_izin": "2023-03-29",
+      "tipe": "Cuti",
+      "status": "Pending (Atasan)"
+    }
+  ]
+}
