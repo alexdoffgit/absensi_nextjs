@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import SidenavKaryawan from "@/components/sidenav/karyawan";
+import SidenavHR from "@/components/sidenav/hr";
 
 type Props = {
   tipe: SidenavOptions;
@@ -10,6 +11,10 @@ type SidenavOptions = "karyawan" | "atasan" | "hrd";
 function UsedSidenav(props: Props) {
   if (props.tipe === "karyawan") {
     return <SidenavKaryawan />;
+  }
+
+  if (props.tipe === "hrd") {
+    return <SidenavHR />;
   }
 
   return <div className="bg-slate-950"></div>;
