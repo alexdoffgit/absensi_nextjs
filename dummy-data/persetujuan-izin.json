@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "nama_karyawan": "Ifa Haryanti",
+      "departemen": "HRD",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-07",
+      "tanggal_awal": "2023-08-15",
+      "tanggal_akhir": "2023-08-15",
+      "alasan": "keluarga sakit",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Gambira Uwais",
+      "departemen": "HRD",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-07",
+      "tanggal_awal": "2023-08-16",
+      "tanggal_akhir": "2023-08-16",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Intan Yolanda",
+      "departemen": "Accounting",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti Khusus",
+      "tanggal_pengajuan": "2023-08-07",
+      "tanggal_awal": "2023-08-15",
+      "tanggal_akhir": "2023-08-15",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Faizah Novitasari",
+      "departemen": "Finance",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-07",
+      "tanggal_awal": "2023-08-17",
+      "tanggal_akhir": "2023-08-17",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Raharja Wijaya",
+      "departemen": "Finance",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-08",
+      "tanggal_awal": "2023-08-22",
+      "tanggal_akhir": "2023-08-22",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Agnes Safitri",
+      "departemen": "Administration",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti Tidak Dibayar",
+      "tanggal_pengajuan": "2023-08-08",
+      "tanggal_awal": "2023-08-22",
+      "tanggal_akhir": "2023-08-22",
+      "alasan": "ngantar anak wisuda",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Tasdik Hardiansyah",
+      "departemen": "Administration",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-09",
+      "tanggal_awal": "2023-08-23",
+      "tanggal_akhir": "2023-08-23",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Hafshah Usada",
+      "departemen": "IT",
+      "jabatan": "Supervisor",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-09",
+      "tanggal_awal": "2023-08-28",
+      "tanggal_akhir": "2023-08-28",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Ridwan Zulkarnain",
+      "departemen": "IT",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-09",
+      "tanggal_awal": "2023-08-29",
+      "tanggal_akhir": "2023-08-29",
+      "alasan": "",
+      "lampiran": ""
+    },
+    {
+      "nama_karyawan": "Maryadi Mansur",
+      "departemen": "IT",
+      "jabatan": "Staff",
+      "tipe_izin": "Cuti",
+      "tanggal_pengajuan": "2023-08-09",
+      "tanggal_awal": "2023-08-30",
+      "tanggal_akhir": "2023-08-30",
+      "alasan": "",
+      "lampiran": ""
+    }
+  ]
+}
