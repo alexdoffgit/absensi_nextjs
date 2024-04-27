@@ -6,7 +6,7 @@ import Logout from "@/components/icons/logout";
 import User from "@/components/icons/user";
 
 const links = {
-  absensi: "/karyawan/absensi",
+  kehadiran: "/karyawan/kehadiran",
   izin: {
     pengajuan_izin: "/karyawan/izin/pengajuan-izin",
     tracking_izin: "/karyawan/izin/tracking-izin",
@@ -36,8 +36,8 @@ export default function SidenavKaryawan() {
         <nav>
           <ul className="flex flex-col">
             <li className="mt-1 py-1 hover:bg-slate-600">
-              <Link href={links.absensi} className="text-gray-200 block pl-4">
-                Absensi
+              <Link href={links.kehadiran} className="text-gray-200 block pl-4">
+                Kehadiran
               </Link>
             </li>
             <li className="mt-1">
