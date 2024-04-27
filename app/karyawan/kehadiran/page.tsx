@@ -2,12 +2,14 @@ import { allAbsenKaryawan } from "@/dummy-data/absen-karyawan";
 import Filter from "@/components/icons/filter";
 import Download from "@/components/icons/download";
 import { getPresensi } from "./get-presensi";
+import { getAbsensi } from "./get-absensi";
 
 export default async function AbsensiKaryawan() {
   return (
     <div className="grid grid-cols-7 lg:grid-cols-10 h-full">
       <div className="col-start-2 col-end-7 lg:col-end-10">
         <DataTablePresensi />
+        <DataTableAbsensi />
       </div>
     </div>
   );
@@ -22,7 +24,7 @@ async function DataTablePresensi() {
 
   return (
     <div>
-      <h1 className="text-3xl mb-14 mt-6">Absen Karyawan</h1>
+      <h1 className="text-3xl mb-14 mt-6">Presensi Karyawan</h1>
       <div className="flex flex-col">
         <FilterControl />
         <div className="overflow-x-auto">
@@ -51,11 +53,69 @@ async function DataTablePresensi() {
                 } else {
                   return (
                     <tr key={`${d.tanggal}__${d.jam_masuk}__${d.jam_pulang}`}>
+                      <td className={tdStyle}>{d.tanggal}</td>
+                      <td className={tdStyle}>???</td>
+                      <td className={tdStyle}>???</td>
+                      <td className={tdStyle}>{d.jam_masuk}</td>
+                      <td className={tdStyle}>{d.jam_pulang}</td>
+                    </tr>
+                  );
+                }
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+async function DataTableAbsensi() {
+  const absensi = await getAbsensi(722);
+
+  const thStyle = `p-2 text-white bg-slate-900`;
+  const tdStyle = `text-center p-2`;
+  const tdOddStyle = `${tdStyle} bg-slate-200`;
+
+  return (
+    <div>
+      <h1 className="text-3xl mb-14 mt-6">Absensi Karyawan</h1>
+      <div className="flex flex-col">
+        <FilterControl />
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead>
+              <tr>
+                <th className={thStyle}>Absensi</th>
+                <th className={thStyle}>Tanggal</th>
+                <th className={thStyle}>Jam Masuk</th>
+                <th className={thStyle}>Jam Istirahat Masuk</th>
+                <th className={thStyle}>Jam Istirahat Keluar</th>
+                <th className={thStyle}>Jam Keluar</th>
+              </tr>
+            </thead>
+            <tbody>
+              {absensi.data.map((d, i) => {
+                if (i % 2 != 0) {
+                  return (
+                    <tr key={`${d.tanggal}__${d.jam_masuk}__${d.jam_pulang}`}>
+                      <td className={tdOddStyle}>{d.tipe_absen}</td>
                       <td className={tdOddStyle}>{d.tanggal}</td>
-                      <td className={tdOddStyle}>???</td>
-                      <td className={tdOddStyle}>???</td>
                       <td className={tdOddStyle}>{d.jam_masuk}</td>
+                      <td className={tdOddStyle}>???</td>
+                      <td className={tdOddStyle}>???</td>
                       <td className={tdOddStyle}>{d.jam_pulang}</td>
+                    </tr>
+                  );
+                } else {
+                  return (
+                    <tr key={`${d.tanggal}__${d.jam_masuk}__${d.jam_pulang}`}>
+                      <td className={tdStyle}>{d.tipe_absen}</td>
+                      <td className={tdStyle}>{d.tanggal}</td>
+                      <td className={tdStyle}>{d.jam_masuk}</td>
+                      <td className={tdStyle}>???</td>
+                      <td className={tdStyle}>???</td>
+                      <td className={tdStyle}>{d.jam_pulang}</td>
                     </tr>
                   );
                 }
